@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REST Full API</title>
+	<style>
+		#property{
+			color: #00b01e;
+		}
+		#value{
+			color: #fff975;
+		}
+	</style>
+</head>
+<body>
+    <h1>REST Full API Node JS Server</h1>
+	<p>Para enviar notificaciones push ir a la url /push con el formato</p>
+	<pre style="background-color: #474343;color: #ffffff;"><code>
+	{
+		<span id="property">"title"</span>: <span id="value">"StoryBook"</span>,
+		<span id="property">"message"</span>: <span id="value">"welcome friends"</span>,
+		<span id="property">"url"</span>: <span id="value">"https://subastas.qa.netlabs.com.ar/"</span>,
+		<span id="property">"ttl"</span>: <span id="value">36000</span>,
+		<span id="property">"icon"</span>: <span id="value">"https://subastas.qa.netlabs.com.ar/landing3/images/favicon.png"</span>,
+		<span id="property">"badge"</span>: <span id="value">"https://cdn3.iconfinder.com/data/icons/happy-x-mas/501/santa15-128.png"</span>,
+		<span id="property">"data"</span>:<span id="value">"Hello New World"</span>,
+		<span id="property">"tag"</span>: <span id="value">"Book Story"</span>
+	}
+	</code></pre>
+    <!-- call service worker for register and send subscribe request to the server with javascript -->
+<script src="app.js"></script>
+</body>
+</html>
